@@ -1,0 +1,19 @@
+1. create project laravel
+  - composer create-project laravel/laravel {project name}
+
+2. set GOOGLE_MAP_KEY in .env file
+  #if you don't have google api key use [AIzaSyAeKDHxT6a10paM0wQ27VQYZzQvioHvb7E] for test
+  #or get your key for trial following link #https://console.cloud.google.com/
+  #inside [.env] file
+  - GOOGLE_MAP_KEY={your key}
+
+3. install redis 
+  - composer required predis/predis
+  #inside [config/database.php] file edit following line to this
+  ####################
+    'client' => env('REDIS_CLIENT', 'predis'),
+  ####################
+  #inside [.env] file add REDIS_CLIENT to predis
+  - REDIS_CLIENT=predis
+  #make sure you running redis 
+  - if you didn't install redis see following link #https://developer.redis.com/create/windows

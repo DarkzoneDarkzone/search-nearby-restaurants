@@ -1,0 +1,66 @@
+.rating svg {
+  --tw-text-opacity: 1;
+  color: rgb(228 161 27 / var(--tw-text-opacity));
+}
+
+.restaurant {
+  background: aliceblue;
+}
+
+.card-shop {
+  background-color: white;
+}
+
+@media screen and (min-width: 1024px) {
+  .card-shop figure {
+    max-width: 8rem;
+    min-width: 8rem;
+  }
+  .card-shop .details .text-md {
+    font-size: 14px;
+  }
+  .card-shop .details .text-sm {
+    font-size: 12px;
+  }
+  .rating svg {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .card-shop {
+    width: 48%;
+  }
+  .card-shop figure {
+    max-width: 7rem;
+    min-width: 7rem;
+  }
+  .card-shop .details .text-md {
+    font-size: 14px;
+  }
+  .card-shop .details .text-sm {
+    font-size: 12px;
+  }
+  .rating svg {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .card-shop {
+    width: 100%;
+  }
+  .card-shop figure {
+    max-width: 7rem;
+    min-width: 7rem;
+  }
+  .card-shop .details .text-md {
+    font-size: 14px;
+  }
+  .card-shop .details .text-sm {
+    font-size: 12px;
+  }
+  .rating svg {
+    font-size: 12px;
+  }
+}

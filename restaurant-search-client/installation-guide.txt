@@ -1,0 +1,30 @@
+1. create project react
+  - npx create-react-app {project-name}
+
+2. use Tailwind in react project
+  - npm install -D tailwindcss postcss autoprefixer
+  - npx tailwindcss init -p
+  - inside [tailwind.config.js] add following code
+  #################
+    content: [
+      "./src/**/*.{js,jsx,ts,tsx}",
+    ],
+  #################
+  - inside [src/App.css] add following code
+  #################
+    @tailwind base;
+    @tailwind components;
+    @tailwind utilities;
+  #################
+
+3. use axios in project
+  - npm install axios
+
+4. use fontAwesome in project
+  - npm install @fortawesome/react-fontawesome
+  - npm install @fortawesome/free-solid-svg-icons
+  - npm install @fortawesome/free-regular-svg-icons
+  - npm install @fortawesome/fontawesome-svg-core
+
+5. use sweetalert2 in project
+  - npm install sweetalert2
